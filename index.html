@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD system</title>
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+    
+
+
+    
+    <div class="container">
+
+
+        <h1 class="text-center my-5">CRUD System</h1>
+
+        <h2 class="alert alert-danger d-none" id="formMessage">Invalid Data</h2>
+        <div class="form-group">
+            <label for="productName">product name</label>
+            <input type="text" class="form-control" data-input="name" id="productName">
+        </div>
+        <div class="form-group">
+            <label for="productPrice">product price</label>
+            <input type="text" class="form-control" data-input="price"  id="productPrice">
+        </div>
+        <div class="form-group">
+            <label for="productCategory">product category</label>
+            <input type="text" class="form-control" data-input="category"  id="productCategory">
+        </div>
+        <div class="form-group">
+            <label for="productDescription">product descriptiom</label>
+            <input type="text" class="form-control" data-input="description"  id="productDescription">
+        </div>
+
+        <button class="btn btn-primary d-block"  disabled id="btn-addProduct">add product</button>
+        <button class="btn btn-success d-none" id="btn-updateProduct">update product</button>
+    </div>
+
+    
+
+    <div class="container mt-5">
+        <table class="table table-dark">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">name</th>
+                <th scope="col">category</th>
+                <th scope="col">price</th>
+                <th scope="col">description</th>
+              </tr>
+            </thead>
+            <tbody id="tdata">
+
+            </tbody>
+          </table>
+
+
+    </div>
+
+
+
+
+
+
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/script.js" type="module"></script>
+
+    
+
+</body>
+</html>
