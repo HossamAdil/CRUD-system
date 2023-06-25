@@ -1,3 +1,3 @@
 # CRUD-system
 
-## Vanilla JavaScript
+Vanilla JavaScript
